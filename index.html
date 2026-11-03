@@ -1,1 +1,226 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Obito Tobi | P. Shanmuka Sai Prabhath</title>
+<meta name="description" content="Portfolio of P. Shanmuka Sai Prabhath (Obito Tobi): developer, automation enthusiast and AI explorer. Drawn live by a swarm of cursors.">
+<meta name="theme-color" content="#f4f3ee">
+<meta property="og:title" content="Obito Tobi | P. Shanmuka Sai Prabhath">
+<meta property="og:description" content="A manga-style developer portfolio, drawn live by a swarm of cursors.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
+<script>
+/* Hide panels only when motion is allowed; remove the hiding again if the swarm script never starts. */
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('js');
+  setTimeout(function () { if (!window.__swarmOK) document.documentElement.classList.remove('js'); }, 4000);
+}
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  NOTES FOR FUTURE ME  (it is fine to leave this block in; it is visible in the page source)
+  Account: iamtobi07.mail@gmail.com  (sign in at claude.ai, find the chat about the swarm-cursors manga portfolio)
+  Live site: https://saiprabhath07.github.io   Repo: https://github.com/saiprabhath07/saiprabhath07.github.io
+  Claude preview: https://claude.ai/artifact/LT7sJB4sap5DHQprXx32p7
+  Claude code session: https://claude.ai/code/session_01BJUdbfiye55SedaaUyUvKG
+
+  Theme: manga, 3 colours only (ink #0d0d0d, paper #f4f3ee, red #d4181f).
+  Swarm cursors are original code, inspired by Swarm by Joel Califa (keep the footer credit).
+  Portrait panel is from Naruto (Masashi Kishimoto / Shueisha), used as a fan avatar.
+
+  TODO / IDEAS
+   1. Send the repo list in priority order, plus the public "sai data" repo URL (SAI itself is private)
+   2. HackerRank / CodeChef stats panel (needs numbers from me, the sites block bots)
+   3. exploreKashmir is intentionally left out (tiny fix, not my project)
+   4. First post for DEV / Hashnode: write about building Linux From Scratch
+   5. Pymail repo has a credentials.txt: check it holds nothing real
+-->
+
+<div class="wrap">
+  <header class="bar">
+    <div class="brand">OBITO TOBI<small>P. SHANMUKA SAI PRABHATH</small></div>
+    <nav aria-label="Chapters">
+      <a href="#ch1">Ch.1 Intro</a>
+      <a href="#ch2">Ch.2 Works</a>
+      <a href="#ch3">Ch.3 Profile</a>
+      <a href="#ch4">Ch.4 Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= CHAPTER 1 ================= -->
+    <section class="page" id="ch1">
+      <div class="ctag">Chapter 1</div>
+      <div class="grid">
+        <div class="panel p-title speed" data-build>
+          <span class="kicker">Portfolio · Vol. 1</span>
+          <h1 data-type>Obito Tobi</h1>
+          <p class="typer" aria-label="Hey, I am P. Shanmuka Sai Prabhath. Mind behind the machine. Developer and automation enthusiast. AI explorer, known online as Obito Tobi."><span id="typer" aria-hidden="true">Hey, I'm P. Shanmuka Sai Prabhath</span><i class="caret" aria-hidden="true"></i></p>
+          <span class="sfx tr" aria-hidden="true">オビト!</span>
+        </div>
+
+        <div class="panel p-face" data-build>
+          <img src="assets/obito.png" width="640" height="640" alt="Manga panel of Tobi in his spiral mask, with a chain sickle over his shoulder">
+          <div class="cap">Obito Tobi</div>
+        </div>
+
+        <div class="panel p-say" data-build>
+          <div class="bubble" data-type>Ask me about automation!</div>
+        </div>
+
+        <div class="panel p-intro" data-build>
+          <p>I don't just learn tech, I fold it into how I work. Right now that means advanced Python, Ubuntu internals and AI systems, with GitHub as my daily dev dojo.</p>
+          <p>This portfolio is drawn live by a swarm of cursors. Move yours around and they will follow.</p>
+          <a class="go" href="#ch2">Read chapter 2, the works ↓</a>
+        </div>
+      </div>
+      <div class="pgno">— 1 —</div>
+    </section>
+
+    <!-- ================= CHAPTER 2 ================= -->
+    <section class="page" id="ch2">
+      <div class="ctag">Chapter 2</div>
+      <div class="grid">
+        <div class="panel p-head tone" data-build style="grid-column: span 12">
+          <h2 data-type>The works</h2>
+          <p>Solo builds, squad projects and hackathon runs. Most of it lives on GitHub.</p>
+          <span class="sfx br" aria-hidden="true">サイ!</span>
+        </div>
+
+        <article class="panel proj a" data-build>
+          <header><h3 data-type>SAI</h3><span class="num" aria-hidden="true">01</span></header>
+          <div class="term" role="img" aria-label="Terminal showing SAI status">
+            <span>$ sai --about</span>
+            <span class="dim">Super Artificial Intelligence</span>
+            <span class="dim">a modular assistant, built in the terminal</span>
+            <span>phase 1: GitHub push automation _</span>
+          </div>
+          <p>My main project: a modular AI assistant that lives in the terminal. It started as a GitHub automation helper in Termux and is planned to grow into a learning companion that remembers context, then adds voice and vision. The code is in a private repo. The plan and notes are public.</p>
+          <ul class="tags"><li>Bash</li><li>Termux</li><li>GitHub</li><li>AI</li><li class="on">Main project</li><li class="on">Private repo</li><li class="on">Shelved for studies</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/check-this-out-sai" target="_blank" rel="noopener">Read the public notes →</a></div>
+        </article>
+        <article class="panel proj b" data-build>
+          <header><h3 data-type>SpamSense</h3><span class="num" aria-hidden="true">02</span></header>
+          <div class="term" role="img" aria-label="Terminal showing SpamSense features">
+            <span>$ java Main</span>
+            <span class="dim">pure Java, no libraries</span>
+            <span class="dim">naive bayes written from scratch</span>
+            <span>spam or ham? _</span>
+          </div>
+          <p>A spam classifier in pure Java. Naive Bayes with Laplace smoothing, text preprocessing, an accuracy report and a Swing GUI, all written from scratch.</p>
+          <ul class="tags"><li>Java</li><li>Swing</li><li>Machine learning</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/spamsense" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj a" data-build>
+          <header><h3 data-type>EMS</h3><span class="num" aria-hidden="true">03</span></header>
+          <div class="thumb t4" data-label="IF YOU CAN SPEAK, YOU CAN BILL" role="img" aria-label="Pattern placeholder for EMS"></div>
+          <p>A voice-enabled, multilingual billing and inventory app for local shops. Say &ldquo;add 2 sugar packets&rdquo; and it builds the bill, then updates stock, alerts and sales charts. I was the developer on a team of eight led by Mohammed Sohail. In the team&rsquo;s tests, voice recognition scored 92 to 95 percent and 90 percent of testers preferred it to manual billing.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Netlify</li><li class="on">Team The9Coders</li><li class="on">Diploma project</li></ul>
+          <div class="reads"><a class="read" href="https://ems6.netlify.app/" target="_blank" rel="noopener">Live demo →</a><a class="read" href="https://github.com/clgdrivebuddy23054/EMS" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj b" data-build>
+          <header><h3 data-type>Space Station</h3><span class="num" aria-hidden="true">04</span></header>
+          <div class="thumb t4" data-label="YOLOv8" role="img" aria-label="Pattern placeholder for the Space Station Safety project"></div>
+          <p>Our Hack With Hyderabad entry for Duality AI&rsquo;s Space Station Safety challenge: spot tools and hazards that turn dangerous in zero gravity. The plan built on pre-trained YOLOv8 models. I led The9Coders, a team of six.</p>
+          <ul class="tags"><li>Python</li><li>YOLOv8</li><li>OpenCV</li><li class="on">Hackathon</li><li class="on">Team lead</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/clgdrivebuddy23054/hwh-duality" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj a" data-build>
+          <header><h3 data-type>Text to Speech</h3><span class="num" aria-hidden="true">05</span></header>
+          <div class="thumb t1" data-label="TEXT → SPEECH" role="img" aria-label="Pattern placeholder for the Text to Speech app"></div>
+          <p>A Streamlit app that turns typed or uploaded text into speech with Google TTS, plays it in the browser and lets you download the MP3. Built with Sohail.</p>
+          <ul class="tags"><li>Python</li><li>Streamlit</li><li>gTTS</li><li class="on">Collab</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/coder-sohail/tts-saiprabhath" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj b" data-build>
+          <header><h3 data-type>ARGUS</h3><span class="num" aria-hidden="true">06</span></header>
+          <div class="thumb t3" data-label="DRONE VIDEO → 3D" role="img" aria-label="Pattern placeholder for ARGUS"></div>
+          <p>Turns a single-pass drone video into a 3D point cloud. Uses pycolmap for reconstruction, with an OpenCV SIFT pipeline as the fallback. Built for Smart India Hackathon 2026.</p>
+          <ul class="tags"><li>Python</li><li>Streamlit</li><li>OpenCV</li><li>pycolmap</li><li class="on">Team ATLAS</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/argus" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj a" data-build>
+          <header><h3 data-type>FindIt</h3><span class="num" aria-hidden="true">07</span></header>
+          <div class="thumb shot" role="img" aria-label="Halftone screenshot of FindIt showing a match scored 82 out of 100"><img src="assets/findit.png" width="1100" height="618" alt="" loading="lazy"></div>
+          <p>A smart lost and found for campus. Every report is scored out of 100 against open items, and the finder&rsquo;s contact is revealed only after the owner answers a secret question.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>JSON</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/findit" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj b" data-build>
+          <header><h3 data-type>Document Search</h3><span class="num" aria-hidden="true">08</span></header>
+          <div class="term" role="img" aria-label="Terminal showing Document Search features">
+            <span>$ ./doc_search</span>
+            <span class="dim">trie + AVL tree + merge sort</span>
+            <span class="dim">brute force | KMP | Boyer-Moore</span>
+            <span>keyword, prefix and phrase search _</span>
+          </div>
+          <p>A document search engine in C. A trie powers keyword and prefix search, an AVL tree indexes titles, and phrase search compares brute force, KMP and Boyer-Moore.</p>
+          <ul class="tags"><li>C</li><li>Data structures</li><li class="on">Team of 4</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/doc_search" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj a" data-build>
+          <header><h3 data-type>E-commerce DB</h3><span class="num" aria-hidden="true">09</span></header>
+          <div class="thumb t2" data-label="UNF → BCNF" role="img" aria-label="Pattern placeholder for the DBMS project"></div>
+          <p>An e-commerce database taken from unnormalized form to BCNF in MySQL, with functional dependency analysis, lossless-join checks and a written report.</p>
+          <ul class="tags"><li>MySQL</li><li>SQL</li><li>Normalization</li><li class="on">DBMS project team</li></ul>
+          <div class="reads"><a class="read" href="https://github.com/saiprabhath07/dbms-pbl-2sem-1" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+        <article class="panel proj b" data-build>
+          <header><h3 data-type>Idea bin</h3><span class="num" aria-hidden="true">10</span></header>
+          <ul class="mini">
+            <li><b>Chatspace</b><span>A place to chat. Still a blank page.</span><a class="read" href="https://github.com/saiprabhath07/chatspace-for-dogshit" target="_blank" rel="noopener">Repo →</a></li>
+            <li><b>Ransoms</b><span>A free platform for freelancers, part-time workers and recruiters, with fraud kept out.</span><a class="read" href="https://github.com/saiprabhath07/ransoms" target="_blank" rel="noopener">Repo →</a></li>
+          </ul>
+        </article>
+          </div>
+        </div>
+      </div>
+      <div class="pgno">— 3 —</div>
+    </section>
+
+    <!-- ================= CHAPTER 4 ================= -->
+    <section class="page" id="ch4">
+      <div class="ctag">Chapter 4</div>
+      <div class="grid">
+        <div class="panel p-end" data-build>
+          <h2 data-type>To be continued…</h2>
+          <p class="note">Not looking for internships right now. Studies and tech community work come first, but I am happy to talk.</p>
+          <div class="mail">
+            <span class="addr" id="addr">saiprabhath.07@gmail.com</span>
+            <button class="copy" id="copy" type="button">Copy</button>
+          </div>
+          <ul class="links">
+            <li><a href="https://github.com/saiprabhath07" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/padavala-shanmuka-sai-prabhath-84a86934a/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com/saiprabhath07" target="_blank" rel="noopener">X</a></li>
+            <li><a href="https://dev.to/saiprabhath07" target="_blank" rel="noopener">DEV</a></li>
+            <li><a href="https://codepen.io/saiprabhath07" target="_blank" rel="noopener">CodePen</a></li>
+            <li><a href="https://kaggle.com/shanmukasaiprabhath" target="_blank" rel="noopener">Kaggle</a></li>
+            <li><a href="https://www.codechef.com/users/saiprabhath07" target="_blank" rel="noopener">CodeChef</a></li>
+            <li><a href="https://www.hackerrank.com/profile/saiprabhath_07" target="_blank" rel="noopener">HackerRank</a></li>
+            <li><a href="https://instagram.com/saiprabhath_07" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+          <span class="sfx tl" aria-hidden="true">トビ!</span>
+        </div>
+      </div>
+      <div class="pgno">— 4 —</div>
+    </section>
+  </main>
+
+  <footer>
+    <b>— End of volume 1 —</b>
+    <span>Cursor swarm inspired by Swarm by Joel Califa</span>
+    <span>Portrait panel: Naruto, Masashi Kishimoto / Shueisha</span>
+  </footer>
+</div>
+
+<div id="swarm" aria-hidden="true"></div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
